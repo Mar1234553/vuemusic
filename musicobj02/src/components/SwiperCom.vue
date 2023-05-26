@@ -21,11 +21,14 @@ export default{
             imgs:[  //轮播图的数据
                 {pic:require("../assets/logo.png")},
                 {pic:require("../assets/logo.png")},
+                {pic:require("../assets/logo.png")},
+                {pic:require("../assets/logo.png")},
+                {pic:require("../assets/logo.png")},
                 {pic:require("../assets/logo.png")}
             ]
         }
     },
-    async mounted(){
+    async mounted(){  //async...await 异步ajax请求函数
         var res = await getBanner(1);
         this.imgs = res.data.banners;
         var myswiper = new Swiper("#swiperIndex",{
