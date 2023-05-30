@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+    </div>
+
+    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.js"></script>
+    <script>
+        import { onBeforeMount,onMounnted,onaBeforeUpdate,onUpdated,onBeforeUnmount,onUnmounted} from "vue";
+
+        //vue3生命周期函数
+        const
+        var app = vew Vue({
+            el:"#app",
+            data:{},
+            beforeCreate() { }, //vue对象创建成功之前
+            created() { },  //vue对象创建成功之后
+            beforeMount() { },  //view与model绑定成功之前
+            mounted() { },  //view与model绑定成功之后
+            beforeUpdate() { },  //view与model数据更新之前
+            updated() { },  //view与model数据更新之后
+            beforeDestroy() { },  //vue对象销毁前
+            destroyed() { },  //vue对象销毁后
+        })
+    </script>
+</body>
+</html>

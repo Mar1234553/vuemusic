@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div class="topNav">
         <div class="topLeft">
             <svg class="icon" aria-hidden="true">
@@ -20,38 +20,35 @@
 </template>
 
 <script>
-export default {
-    name: "topnav"
+export default{
+    name:"TopNav"
 }
 </script>
 
 <style lang="less" scoped>
-.topNav {
+.topNav{
     width: 7.5rem;
     height: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0.2rem;
-
-    .icon {
+    .icon{
         width: 0.5rem;
         height: 0.5rem;
     }
-
-    .search {
+    .search{
         width: 0.45rem;
         height: 0.45rem;
     }
-
-    .topCenter {
+    .topCenter{
         width: 4.5rem;
         display: flex;
         justify-content: space-around;
-
-        .active {
+        .active{
             font-weight: 900;
         }
     }
 
-}</style>
+}
+</style>
